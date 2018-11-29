@@ -14,4 +14,4 @@ cd /wrk/hyvi
 source ann-env2/bin/activate
 
 cd ann-benchmarks
-srun python run.py --dataset sift-128-euclidean --algorithm mrpt --local --force
+srun python run.py --dataset sift-128-euclidean --algorithm mrpt --local --force --count 100

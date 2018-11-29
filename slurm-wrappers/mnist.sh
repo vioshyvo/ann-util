@@ -2,9 +2,8 @@
 #SBATCH --job-name=mnist
 #SBATCH -o slurm_output/mnist.txt
 #SBATCH --workdir=/wrk/hyvi/ann-util
-#SBATCH -p test
 #SBATCH -c 1
-#SBATCH -t 10:00
+#SBATCH -t 30:00
 #SBATCH --mem=2G
 #SBATCH --mail-type=END,FAIL
 #SBATCH --mail-user=ville.o.hyvonen@helsinki.fi
@@ -15,4 +14,4 @@ cd /wrk/hyvi
 source ann-env2/bin/activate
 
 cd ann-benchmarks
-srun python run.py --dataset mnist-784-euclidean --algorithm mrpt --local --force
+srun python run.py --dataset mnist-784-euclidean --algorithm mrpt --local --force --count 100
