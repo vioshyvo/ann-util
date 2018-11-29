@@ -1,9 +1,9 @@
 #!/bin/bash
-#SBATCH --job-name=sift
-#SBATCH -o slurm_output/sift.txt
+#SBATCH --job-name=gist
+#SBATCH -o slurm_output/gist.txt
 #SBATCH --workdir=/wrk/hyvi/ann-util
 #SBATCH -c 1
-#SBATCH -t 5:00:00
+#SBATCH -t 10:00:00
 #SBATCH --mem=30G
 #SBATCH --mail-type=END,FAIL
 #SBATCH --mail-user=ville.o.hyvonen@helsinki.fi
@@ -14,4 +14,4 @@ cd /wrk/hyvi
 source ann-env2/bin/activate
 
 cd ann-benchmarks
-srun python run.py --dataset sift-128-euclidean --algorithm mrpt --local --force
+srun python run.py --dataset gist-960-euclidean --algorithm mrpt --local --force
