@@ -4,7 +4,7 @@
 #SBATCH --workdir=/wrk/hyvi/ann-util
 #SBATCH -c 1
 #SBATCH -t 10:00:00
-#SBATCH --mem=30G
+#SBATCH --mem=100G
 #SBATCH --mail-type=END,FAIL
 #SBATCH --mail-user=ville.o.hyvonen@helsinki.fi
 

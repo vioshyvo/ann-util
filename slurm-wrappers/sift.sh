@@ -3,8 +3,8 @@
 #SBATCH -o slurm_output/sift.txt
 #SBATCH --workdir=/wrk/hyvi/ann-util
 #SBATCH -c 1
-#SBATCH -t 5:00:00
-#SBATCH --mem=30G
+#SBATCH -t 10:00:00
+#SBATCH --mem=50G
 #SBATCH --mail-type=END,FAIL
 #SBATCH --mail-user=ville.o.hyvonen@helsinki.fi
 
