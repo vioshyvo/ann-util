@@ -1,10 +1,10 @@
 #!/bin/bash
-#SBATCH --job-name=glove-100
-#SBATCH -o slurm_output/glove-100.txt
+#SBATCH --job-name=random-xs-20-annoy-100
+#SBATCH -o slurm_output/random-xs-20-annoy-100.txt
 #SBATCH --workdir=/wrk/hyvi/ann-util
 #SBATCH -c 1
 #SBATCH -t 5:00:00
-#SBATCH --mem=30G
+#SBATCH --mem=10G
 #SBATCH --mail-type=END,FAIL
 #SBATCH --mail-user=ville.o.hyvonen@helsinki.fi
 
@@ -14,4 +14,4 @@ cd /wrk/hyvi
 source ann-env2/bin/activate
 
 cd ann-benchmarks
-srun python run.py --dataset glove-100-angular --algorithm mrpt --local --force --count 100
+srun python run.py --dataset random-xs-20-angular --algorithm annoy --local --force --count 100
