@@ -3,7 +3,7 @@
 #SBATCH -o slurm_output/fashion-mnist-10.txt
 #SBATCH --workdir=/wrk/hyvi/ann-util
 #SBATCH -c 1
-#SBATCH -t 01:00:00
+#SBATCH -t 00:30:00
 #SBATCH --mem=2G
 #SBATCH --mail-type=END,FAIL
 #SBATCH --mail-user=ville.o.hyvonen@helsinki.fi
