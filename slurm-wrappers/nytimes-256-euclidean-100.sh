@@ -1,10 +1,10 @@
 #!/bin/bash
-#SBATCH --job-name=gist-100
-#SBATCH -o slurm_output/gist-100.txt
+#SBATCH --job-name=nytimes-256-100
+#SBATCH -o slurm_output/nytimes-256-100.txt
 #SBATCH --workdir=/wrk/hyvi/ann-util
 #SBATCH -c 1
-#SBATCH -t 10:00:00
-#SBATCH --mem=50G
+#SBATCH -t 5:00:00
+#SBATCH --mem=10G
 #SBATCH --mail-type=END,FAIL
 #SBATCH --mail-user=ville.o.hyvonen@helsinki.fi
 
@@ -14,4 +14,4 @@ cd /wrk/hyvi
 source ann-env2/bin/activate
 
 cd ann-benchmarks
-srun python run.py --dataset gist-960-euclidean --algorithm mrpt --local --force --count 100
+srun python run.py --dataset nytimes-256-euclidean --algorithm mrpt --local --force --count 100

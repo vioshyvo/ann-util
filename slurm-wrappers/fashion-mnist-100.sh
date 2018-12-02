@@ -1,6 +1,6 @@
 #!/bin/bash
-#SBATCH --job-name=fashion-mnist
-#SBATCH -o slurm_output/fashion-mnist.txt
+#SBATCH --job-name=fashion-mnist-100
+#SBATCH -o slurm_output/fashion-mnist-100.txt
 #SBATCH --workdir=/wrk/hyvi/ann-util
 #SBATCH -c 1
 #SBATCH -t 01:00:00

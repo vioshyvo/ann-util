@@ -1,6 +1,6 @@
 #!/bin/bash
-#SBATCH --job-name=sift
-#SBATCH -o slurm_output/sift.txt
+#SBATCH --job-name=sift-100
+#SBATCH -o slurm_output/sift-100.txt
 #SBATCH --workdir=/wrk/hyvi/ann-util
 #SBATCH -c 1
 #SBATCH -t 10:00:00
